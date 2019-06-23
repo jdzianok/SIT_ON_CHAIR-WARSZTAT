@@ -1,4 +1,4 @@
-# Sit on chair page layout
+# 'Sit on chair' page layout
 
 ---------------
 
