@@ -285,7 +285,6 @@ section.gallery {
 
 section.price_list {
   height: 725px;
-  margin-bottom: 40px;
   padding-top: 44px;
   background-color: #f1f1f1;
 
@@ -493,21 +492,148 @@ section.price_list {
   color: #27c7ab;
 }
 
-
-
-
-
-
-
-
-
-
+/* SECTION CONTACT */
 
 section.contact {
-  margin-top: 60px;
-  background-color: #fff;
+  height: 530px;
+  margin-top: 30px;
 }
 
-.contact .main_width.contact {
-  background-color: #fff;
+.contact .main_width.contact_h3 h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #555;
+}
+
+.contact .main_width.contact_h3 {
+  position: relative;
+  margin-bottom: 58px;
+}
+
+.contact .main_width.contact_h3::after {
+  position: absolute;
+  top: 31px;
+  left: -3px;
+  content: '';
+  width: 320px;
+  height: 7px;
+  background-color: #27c7ab;
+}
+
+.contact .main_width.contact .form {
+  display: flex;
+  height: 450px;
+}
+
+.contact .main_width.contact .form form {
+  width: 60%;
+}
+
+.contact .main_width.contact .form input,
+.contact .main_width.contact .form textarea {
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin-bottom: 28px;
+  padding-left: 10px;
+  border: 1px solid rgba(39, 199, 171, .3);
+  font-size: 36px;
+  color: red;
+  font-weight: 100;
+  line-height: 65px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact .main_width.contact .form ::placeholder {
+  color: rgba(204, 204, 204, .6);
+}
+
+.contact .main_width.contact .form textarea {
+  height: 185px;
+}
+
+.contact .main_width.contact .form .contact_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  width: 40%;
+}
+
+.contact .main_width.contact .form .img_container {
+  width: 264px;
+  height: 210px;
+  background-image: url('../images/red_chair.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -10px -24px;
+}
+
+.contact .main_width.contact .form .contact_button p {
+  position: relative;
+  margin: 5px 0 10px 73px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #bbb;
+}
+
+.contact .main_width.contact .form .contact_button p span {
+  position: absolute;
+  top: -3px;
+  left: -60px;
+  background-image: url('../images/form_ok.jpg');
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: 0 4px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(39, 199, 171, .3);
+}
+
+.contact .main_width.contact .form .contact_button button {
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  margin: 26px 0 0 16px;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 343px;
+  height: 70px;
+  background-color: #27c7ab;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+footer {
+  height: 60px;
+}
+
+.main_width.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.main_width.footer p:first-child {
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.main_width.footer .media {
+  margin-left: 196px;
+}
+
+.main_width.footer p:last-child {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+}
+
+.main_width.footer p span {
+  font-weight: 700;
 }
