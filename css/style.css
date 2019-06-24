@@ -16,6 +16,11 @@ footer {
   margin: 0 auto;
 }
 
+.main_width {
+  width: 1055px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 
 header {
@@ -28,9 +33,7 @@ header .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1050px;
   height: 40px;
-  margin: 0 auto;
 }
 
 .nav p {
@@ -72,6 +75,8 @@ header .nav {
   display: block;
 }
 
+/* DROPDOWN */
+
 .dropdown {
   position: absolute;
   top: 49px;
@@ -107,4 +112,93 @@ header .nav {
   padding: 0 0 10px;
   font-size: 16px;
   font-weight: 300;
+}
+
+/* SECTION HERO */
+
+section.hero {
+  height: 505px;
+  background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 1%, rgba(250, 250, 250, 1) 53%, rgba(204, 207, 214, 1) 98%, rgba(204, 207, 214, 1) 100%);
+  margin-bottom: 30px;
+}
+
+.main_width.hero {
+  height: 505px;
+  padding: 50px;
+}
+
+.hero_image {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 400px;
+  background-image: url('../images/black_chair.png');
+  background-repeat: no-repeat;
+  background-size: 148%;
+  background-position: -92px 20px;
+}
+
+.hero_image::before,
+.description_info::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_image::before {
+  background-image: url('../images/arrow\ left.png');
+  top: 190px;
+  left: -47px;
+}
+
+.description_info {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  height: 400px;
+  margin-left: 20px;
+}
+
+.description_info::after {
+  background-image: url('../images/arrow\ right.png');
+  top: 190px;
+  right: -120px;
+}
+
+.description_info h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 84px;
+}
+
+.description_info h1 span {
+  color: #27c7ab;
+  font-weight: 700;
+}
+
+.description_info p {
+  margin: 28px 10px 29px 10px;
+  line-height: 160%;
+  /* letter-spacing: 1px; */
+  font-size: 14px;
+  text-align: center;
+}
+
+.description_info button {
+  width: 265px;
+  height: 52px;
+  /* czemu nie działa margin: 0 auto; ? */
+  margin-left: 95px;
+  border: none;
+  background: #27c7ab;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
